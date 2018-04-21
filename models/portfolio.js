@@ -1,18 +1,11 @@
 const mongoose = require('mongoose');
-const tourSchema = new mongoose.Schema({
+const portfolioSchema = new mongoose.Schema({
 	name: {type: String, required: true},
-	location: {type: String,
-		required: true},
-	date: {type: String,
-		required: true},
-	img: {type: String},
-	competitive: Boolean,
-	social: Boolean,
-	rating: Number,
-	review: String
+	url: {type: String},
+	img: {type: String}
 });
 
 // collection
-const Tournaments = mongoose.model('Tournaments', tourSchema);
+const Portfolio = mongoose.model('Portfolio', portfolioSchema);
 
-module.exports = Tournaments;
+module.exports = Portfolio;
