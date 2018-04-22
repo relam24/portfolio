@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title></title>
 		<% include ../partials/head.ejs %>
 	</head>
 	<body>
-		<div class='container'>
-		<h1> Projects </h1>
-			<ul class='box'>
-					<% for (let i = 0; i < Projects.length; i++){ %>
-						<div class='name'>
-						<h2><%=Projects.name; %></h2>
-						</div>
-				 	<li>
-					 	<img src='/projects/<%=Projects[i].img%>'/>
-				 	</li>
-					<li>
-						<a href='/projects/<%=Projects[i].url%>'></a>
+			<h4> Projects </h4>
+				<ul>
+						<% for (let i = 0; i < Projects.length; i++){ %>
+					<li class='container'>
+						<a href='/projects/<%=Projects[i].id; %>'>
+							<img src='<%=Projects[i].img%>'/>
+						</a>
+						<h5><a href='/projects/<%=Projects[i].id; %>/'>
+						<%=Projects[i].name; %></a></h5>
 					</li>
-			 		<% } %>
-			</ul>
-			</div>
-			<footer>
-			<% include ../partials/footer.ejs %>
-			</footer>
+		 				<% } %>
+				</ul>
+				<button>
+					<a href='/projects/new'> Add Project </a>
+				</button>
+				<% include ../partials/footer.ejs %>
+
 	</body>
 </html>

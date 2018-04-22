@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title></title>
@@ -7,10 +7,25 @@
 	</head>
 	<body>
 		<div>
-			<h2><%=Projects.name; %></h2>
-			<img src="<%=Projects.img%>" />
-			<a href='<%=Projects.url; %>'></a>
 		</div>
+		<div>
+				<h3>
+			<%=Projects.name; %>
+		</h3>
+		</div>
+		<div>
+			<h4>
+		<a href='/projects/<%=Projects.id; %>/'><%=Projects.url; %></a>
+	</h4>
+		</div>
+		<button>
+			<!--delete form here before closing li -->
+			<!--make action delete with method override -->
+						<form action='/projects/<%=Projects.id; %>?_method=DELETE' method='POST'>
+							<input type='submit' value='Delete Project'  />
+						</form>
+			<a href='/projects'>Back to Tournament Index</a>
+		</button>
 		<footer>
 			<% include ../partials/footer.ejs %>
 		</footer>
