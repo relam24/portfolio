@@ -5,18 +5,25 @@
 		<title></title>
 		<% include ../partials/head.ejs %>
 	</head>
-	<body class='container'>
-		<div>
+	<body>
+		<div class='container'>
 		<h1> Projects </h1>
-			<ul class='container'>
+			<ul class='box'>
 					<% for (let i = 0; i < Projects.length; i++){ %>
+						<div class='name'>
 						<h2><%=Projects.name; %></h2>
+						</div>
 				 	<li>
-					 	<a href='/projects/<%=Projects[i].img%>'></a>
+					 	<img src='/projects/<%=Projects[i].img%>'/>
 				 	</li>
+					<li>
+						<a href='/projects/<%=Projects[i].url%>'></a>
+					</li>
 			 		<% } %>
 			</ul>
 			</div>
+			<footer>
 			<% include ../partials/footer.ejs %>
+			</footer>
 	</body>
 </html>
