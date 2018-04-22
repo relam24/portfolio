@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% include ../partials/head.ejs %>
+	</head>
+	<body class='container'>
+		<div>
+		<h1> Projects </h1>
+			<ul class='container'>
+					<% for (let i = 0; i < Projects.length; i++){ %>
+						<h2><%=Projects.name; %></h2>
+				 	<li>
+					 	<a href='/projects/<%=Projects[i].img%>'></a>
+				 	</li>
+			 		<% } %>
+			</ul>
+			</div>
+			<% include ../partials/footer.ejs %>
+	</body>
+</html>

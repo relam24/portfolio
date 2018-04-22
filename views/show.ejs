@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% include ../partials/head.ejs %>
+	</head>
+	<body>
+		<div>
+			<h2><%=Projects.name; %></h2>
+			<img src="<%=Projects.img%>" />
+			<h5><%=Projects.url; %></h5>
+		</div>
+		<footer>
+			<% include ../partials/footer.ejs %>
+		</footer>
+	</body>
+</html>

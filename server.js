@@ -12,11 +12,11 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // controllers
-const portfolioController = require('./controllers/portfolio.js');
-app.use('/portfolio', portfolioController);
+const projectsController = require('./controllers/projects.js');
+app.use('/projects', projectsController);
 
 // connections
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/rugby';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/projects';
 mongoose.connect(mongoURI);
 mongoose.connection.once('open', () => {
 	console.log('connected to mongo');
