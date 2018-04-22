@@ -16,15 +16,18 @@
 		<div>
 			<h4>
 		<a href='/projects/<%=Projects.id; %>/'><%=Projects.url; %></a>
-	</h4>
+			</h4>
+			<a href='/projects/<%=Projects.id; %>'>
+				<img class='showimg' src='<%=Projects.img%>'/>
+			</a>
 		</div>
 		<button>
 			<!--delete form here before closing li -->
 			<!--make action delete with method override -->
 						<form action='/projects/<%=Projects.id; %>?_method=DELETE' method='POST'>
-							<input type='submit' value='Delete Project'  />
+							<input type='submit' value='Delete'  />
 						</form>
-			<a href='/projects'>Back to Tournament Index</a>
+			<a href='/projects'>Back to Projects</a>
 		</button>
 		<footer>
 			<% include ../partials/footer.ejs %>

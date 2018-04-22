@@ -11,16 +11,14 @@
 						<% for (let i = 0; i < Projects.length; i++){ %>
 					<li class='container'>
 						<a href='/projects/<%=Projects[i].id; %>'>
-							<img src='<%=Projects[i].img%>'/>
+							<img class='indeximg' src='<%=Projects[i].img%>'/>
 						</a>
 						<h5><a href='/projects/<%=Projects[i].id; %>/'>
 						<%=Projects[i].name; %></a></h5>
 					</li>
 		 				<% } %>
+						<a class='project' href='/projects/new'> Add Project </a>
 				</ul>
-				<button>
-					<a href='/projects/new'> Add Project </a>
-				</button>
 				<% include ../partials/footer.ejs %>
 
 	</body>
