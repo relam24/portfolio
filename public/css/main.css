@@ -21,7 +21,8 @@ body {
 	width: 100%;
 	list-style: none;
 	flex-wrap: wrap;
-	border-radius: 10px;
+	border-radius: 16px;
+	opacity: 1.0;
 }
 
 .indeximg {
@@ -33,6 +34,7 @@ body {
 	flex-wrap: wrap;
 	border-radius: 10px;
 	border: 2px solid rgb(231,215,185);
+	opacity: 1.0;
 }
 
 .showimg {
@@ -80,6 +82,7 @@ a {
 .project {
 	text-align: left;
 	display: inline;
+	font-size: 30px;
 }
 
 h4 {
@@ -89,4 +92,14 @@ h4 {
 	margin: 0px;
 	font-size: 60px;
 
+}
+
+.projecturl {
+	font-size: 20px;
+}
+
+.projectname {
+	color: rgb(234,215,181);
+	font-family: 'East Sea Dokdo', cursive;
+	font-size: 50px;
 }
