@@ -46,6 +46,7 @@ body {
 	text-align: center;
 	flex-wrap: wrap;
 	border-radius: 10px;
+	border: 2px solid rgb(231,215,185);
 }
 
 header {
@@ -94,12 +95,12 @@ h4 {
 
 }
 
-.projecturl {
-	font-size: 20px;
-}
-
 .projectname {
 	color: rgb(234,215,181);
 	font-family: 'East Sea Dokdo', cursive;
 	font-size: 50px;
+}
+
+h6 {
+	text-align: center;
 }
