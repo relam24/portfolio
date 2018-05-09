@@ -56,13 +56,15 @@ header {
 	flex-direction: column;
 	border-radius: 10px;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-image: url(https://images.unsplash.com/photo-1519033285472-99145631eaab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=05c36d7e44c7196fc03ad515b929fd8b&auto=format&fit=crop&w=1988&q=80);
 }
 
 h1 {
 	font-size: 60px;
+	float: right;
 	height: 80%;
-	padding: 0px;
+	padding: 1px;
 	margin: 0px;
 	position: relative;
 }
