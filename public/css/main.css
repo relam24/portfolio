@@ -6,7 +6,6 @@ body {
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
-	background-image: url(https://images.unsplash.com/photo-1498575207492-cfbed56146c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=958c8d6e14187bf5fe77abfa92ce22ed&auto=format&fit=crop&w=800&q=60);
 }
 
 .container {
@@ -62,9 +61,16 @@ header {
 
 h1 {
 	font-size: 60px;
-	height: 92%;
+	height: 80%;
 	padding: 0px;
 	margin: 0px;
+	position: relative;
+}
+
+h5 {
+	color: white;
+	font-size: 20px;
+	width: 20%;
 }
 
 li {
@@ -107,6 +113,7 @@ h6 {
   text-align: center;
   padding: 0;
   margin: 0;
+  border-radius: 8px;
 }
 .nav li {
   font-size: 1.2em;
