@@ -1,68 +1,26 @@
 body {
 	display: flex;
+	position: relative;
 	background-color: black;
 	background-size: 100% 100%;
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
-}
-
-.nav ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-}
-
-.nav a:hover {
-  background-color: #005f5f;
-}
-
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
-
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
-
-  .nav li {
-  display: inline-block;
-  margin-right: -4px;
+	background-image: url(https://images.unsplash.com/photo-1498575207492-cfbed56146c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=958c8d6e14187bf5fe77abfa92ce22ed&auto=format&fit=crop&w=800&q=60);
 }
 
 .container {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
-	background-color: white;
 	flex-direction: column;
 	position: relative;
 	align-items: center;
 	align-self: center;
 	align-content: center;
-	width: 100%;
+	width: 80%;
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 	flex-wrap: wrap;
 	border-radius: 16px;
@@ -70,17 +28,18 @@ body {
 }
 
 .indeximg {
-	height: 600px;
-	width: 1000px;
+	position: relative;
+	height: 500px;
+	width: 960px;
 	align-items: center;
 	align-self: center;
 	align-content: center;
 	border-radius: 10px;
-	border: 2px solid rgb(231,215,185);
 	opacity: 1.0;
 }
 
 .showimg {
+	position: relative;
 	height: 560px;
 	width: 1000px;
 	align-items: center;
@@ -89,7 +48,6 @@ body {
 	text-align: center;
 	flex-wrap: wrap;
 	border-radius: 10px;
-	border: 2px solid rgb(231,215,185);
 }
 
 header {
@@ -104,7 +62,7 @@ header {
 
 h1 {
 	font-size: 60px;
-	height: 88%;
+	height: 92%;
 	padding: 0px;
 	margin: 0px;
 }
@@ -135,6 +93,55 @@ h4 {
 	font-size: 50px;
 }
 
+.name {
+	position: relative;
+}
+
 h6 {
 	text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: black;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+  display: inline-block;
+  margin-right: -4px;
 }

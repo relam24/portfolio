@@ -7,13 +7,13 @@
 	</head>
 	<body>
 			<h4> Projects </h4>
-				<ul>
+				<ul class='container'>
 						<% for (let i = 0; i < Projects.length; i++){ %>
-					<li class='container'>
+					<li>
 						<a href='/projects/<%=Projects[i].id; %>'>
 							<img class='indeximg' src='<%=Projects[i].img%>'/>
 						</a>
-						<h5><a href='/projects/<%=Projects[i].id; %>/'>
+						<h5 class="name"><a href='/projects/<%=Projects[i].id; %>/'>
 						<%=Projects[i].name; %></a></h5>
 					</li>
 		 				<% } %>
