@@ -64,7 +64,8 @@ h1 {
 	font-size: 60px;
 	float: right;
 	height: 80%;
-	padding: 1px;
+	padding: 18px;
+	right: 20px;
 	margin: 0px;
 	position: relative;
 }
