@@ -99,7 +99,11 @@ a {
 .project {
 	text-align: left;
 	display: inline;
-	font-size: 30px;
+	font-size: 18px;
+}
+
+.projectnameindex {
+	position: relative;
 }
 
 h4 {
@@ -115,10 +119,6 @@ h4 {
 
 .backtoprojects {
 	font-size: 18px;
-}
-
-.name {
-	position: relative;
 }
 
 h6 {
