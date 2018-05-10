@@ -6,6 +6,7 @@ body {
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
+	font-family: 'Economica', sans-serif;
 }
 
 .containershow {
@@ -90,9 +91,9 @@ header {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 60px;
 	float: right;
-	padding: 10px;
+	padding: 14px;
 	right: 20px;
 	margin: 0px;
 	position: relative;
@@ -135,7 +136,7 @@ a {
 h4 {
 	padding: 10px;
 	margin: 0px;
-	font-size: 14px;
+	font-size: 20px;
 	text-align: center;
 	color: rgb(189,188,194);
 }
@@ -186,6 +187,7 @@ h6 {
 }
 
 .dropdown {
+	font-size: 20px;
     float: left;
     overflow: hidden;
 	border-radius: 8px;
@@ -205,6 +207,7 @@ h6 {
 }
 
 .dropdown-content {
+	font-size: 20px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -216,6 +219,7 @@ h6 {
 }
 
 .dropdown-content a {
+	font-size: 20px;
     float: none;
     color: rgb(189,188,194);
     padding: 12px 16px;
