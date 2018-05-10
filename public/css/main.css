@@ -8,6 +8,27 @@ body {
 	align-items: center;
 }
 
+.containershow {
+	background-color: white;
+	background-image: url(https://images.unsplash.com/photo-1503587295621-a59cbd164caf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c88afa0bdd98794ed73a781042edd31c&auto=format&fit=crop&w=800&q=60);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	width: 70%;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	flex-wrap: wrap;
+	border-radius: 10px;
+	opacity: 1.0;
+}
+
 .container {
 	background-color: white;
 	background-image: url(https://images.unsplash.com/photo-1503587295621-a59cbd164caf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c88afa0bdd98794ed73a781042edd31c&auto=format&fit=crop&w=800&q=60);
@@ -20,7 +41,7 @@ body {
 	align-items: center;
 	align-self: center;
 	align-content: center;
-	width: 62%;
+	width: 60%;
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
@@ -38,6 +59,8 @@ body {
 	align-content: center;
 	border-radius: 10px;
 	opacity: 1.0;
+	display: flex;
+	flex-direction: column;
 }
 
 .showimg {
@@ -115,6 +138,7 @@ h4 {
 
 .projectname {
 	font-size: 28px;
+	color: rgb(62,62,60);
 }
 
 .backtoprojects {
