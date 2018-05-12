@@ -1,6 +1,4 @@
-# portfolio
-
-Portfolio of Projects
+Portfolio
 
 1. Hogwarts Four
 https://relam24.github.io/Game/ 
